@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alive for christ</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header id="site-header">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="logo-cross">✝</span>
+        <span class="logo-text">Gospel Lovers' Christian Movement</span>
+      </div>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"          class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about"         class="nav-link" data-section="about">About</a></li>
+        <li><a href="#announcements" class="nav-link" data-section="announcements">Announcements</a></li>
+        <li><a href="#media"         class="nav-link" data-section="media">Media</a></li>
+        <li><a href="#sermons"       class="nav-link" data-section="sermons">Sermons</a></li>
+        <li><a href="#events"        class="nav-link" data-section="events">Events</a></li>
+        <li><a href="#contact"       class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#home"          class="mobile-link">Home</a></li>
+      <li><a href="#about"         class="mobile-link">About Us</a></li>
+      <li><a href="#announcements" class="mobile-link">Announcements</a></li>
+      <li><a href="#media"         class="mobile-link">Media</a></li>
+      <li><a href="#sermons"       class="mobile-link">Sermons</a></li>
+      <li><a href="#events"        class="mobile-link">Events</a></li>
+      <li><a href="#contact"       class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <main>
+
+    <!-- ============================================================
+         SECTION 1 — HOME / HERO
+    ============================================================ -->
+    <section id="home" class="section">
+
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">Welcome to</p>
+          <!-- ADMIN: Change church name below -->
+          <h3 class="hero-title">Alive For Christ<br>Church</h3>
+          <!-- ADMIN: Change slogan below -->
+          <p class="hero-slogan">We are a Christian Movement with the vision of 
+            spreading God's love to all the nations by preaching the word in various
+             parts of the world, schools, hospitals and also reach out to orphanages &amp; 
+             We are not a church but a Christian Movement</p>
+          <div class="hero-cta">
+            <a href="#about" class="btn btn-gold">Our Story</a>
+            <a href="#events" class="btn btn-outline">Join Us Sunday</a>
+          </div>
+        </div>
+        <div class="hero-scroll-hint">
+          <span>Scroll</span>
+          <i data-feather="chevron-down"></i>
+        </div>
+      </div>
+
+      <!-- Welcome Message -->
+      <div class="welcome-section container">
+        <div class="welcome-icon">✝</div>
+        <!-- ADMIN: Edit welcome message below -->
+        <h2 class="section-title">A Place to Belong</h2>
+        <p class="welcome-text">
+          We are a family of believers committed to loving God, loving people, and serving our community.
+          Whether you are taking your first steps of faith or have walked with Jesus for decades,
+          you are welcome here. Join us as we grow together in grace, truth, and purpose.
+        </p>
+        <div class="welcome-stats">
+          <!-- ADMIN: Update these numbers as the church grows -->
+          <div class="stat"><span class="stat-num">1,200+</span><span class="stat-label">Members</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">25 yrs</span><span class="stat-label">Serving</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">4</span><span class="stat-label">Services / Week</span></div>
+        </div>
+      </div>
+
+      <!-- Upcoming Events Preview (rendered from JS) -->
+      <div class="events-preview container">
+        <h3 class="sub-section-title">Upcoming Events</h3>
+        <div class="events-preview-grid" id="events-preview-grid">
+          <!-- Populated by script.js -->
+        </div>
+        <a href="#events" class="btn btn-gold center-btn">View All Events</a>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — ABOUT US
+    ============================================================ -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Who We Are</span>
+          <h2 class="section-title">About Us</h2>
+          <div class="section-rule"></div>
+        </div>
+
+        <!-- History -->
+        <div class="about-block">
+          <div class="about-img-wrap">
+            <!-- ADMIN: Replace src with your church building photo — place in /images/ -->
+            <img src="images/kmu_n.JPG"
+                 alt="Grace Fellowship Church Building" class="about-img" loading="lazy" />
+          </div>
+          <div class="about-text">
+            <h3 class="about-heading">Our History</h3>
+            <!-- ADMIN: Edit church history text below -->
+            <p>
+              Grace Fellowship Church was founded in 1999 by Pastor David and Mary Johnson in a small
+              living room with just twelve families. Driven by a vision of radical hospitality and
+              biblical community, the church grew steadily over the years.
+            </p>
+            <p>
+              In 2007, we moved into our current worship centre on Maple Avenue, and by 2015 we launched
+              our second campus across town. Today, we are a multi-generational congregation with
+              ministries spanning youth, seniors, women, men, and community outreach.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="mission-vision">
+          <div class="mv-card">
+            <div class="mv-icon"><i data-feather="target"></i></div>
+            <h4>Our Mission</h4>
+            <!-- ADMIN: Edit mission statement -->
+            <p>To make disciples of Jesus Christ who love God, love people, and serve the world.</p>
+          </div>
+          <div class="mv-card mv-card-gold">
+            <div class="mv-icon"><i data-feather="eye"></i></div>
+            <h4>Our Vision</h4>
+            <!-- ADMIN: Edit vision statement -->
+            <p>A church where every person encounters the transforming love of God and finds their God-given purpose.</p>
+          </div>
+          <div class="mv-card">
+            <div class="mv-icon"><i data-feather="heart"></i></div>
+            <h4>Our Values</h4>
+            <!-- ADMIN: Edit values -->
+            <p>Faith · Family · Community · Integrity · Generosity · Excellence in Worship</p>
+          </div>
+        </div>
+
+        <!-- Leadership -->
+        <div class="section-header" style="margin-top:4rem;">
+          <span class="section-tag">Meet the Team</span>
+          <h3 class="section-title">Our Leadership</h3>
+          <div class="section-rule"></div>
+        </div>
+        <div class="leadership-grid" id="leadership-grid">
+          <!-- Populated by script.js — edit LEADERS array in script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — ANNOUNCEMENTS
+    ============================================================ -->
+    <section id="announcements" class="section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Stay Informed</span>
+          <h2 class="section-title">Announcements</h2>
+          <div class="section-rule"></div>
+        </div>
+
+        <!-- ADMIN: Edit ANNOUNCEMENTS array in script.js to manage announcements -->
+        <div class="announcements-grid" id="announcements-grid">
+          <!-- Populated by script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — MEDIA GALLERY
+    ============================================================ -->
+    <section id="media" class="section section-alt">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Captured Moments</span>
+          <h2 class="section-title">Media Gallery</h2>
+          <div class="section-rule"></div>
+        </div>
+
+        <!-- Gallery Tabs -->
+        <div class="gallery-tabs">
+          <button class="gallery-tab active" data-tab="photos">📷 Photos</button>
+          <button class="gallery-tab" data-tab="videos">▶ Videos</button>
+        </div>
+
+        <!-- Photo Grid -->
+        <!-- ADMIN: Edit GALLERY_IMAGES array in script.js to manage photos -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Populated by script.js -->
+        </div>
+
+        <!-- Video Section -->
+        <!-- ADMIN: Edit VIDEOS array in script.js to manage videos -->
+        <div class="video-section hidden" id="video-section">
+          <div class="video-grid" id="video-grid">
+            <!-- Populated by script.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+      <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8249;</button>
+      <button class="lightbox-next" id="lightbox-next" aria-label="Next">&#8250;</button>
+      <div class="lightbox-inner">
+        <img src="" alt="" id="lightbox-img" />
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SECTION 5 — SERMONS
+    ============================================================ -->
+    <section id="sermons" class="section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">The Word</span>
+          <h2 class="section-title">Sermons</h2>
+          <div class="section-rule"></div>
+        </div>
+
+        <!-- ADMIN: Edit SERMONS array in script.js to manage sermons -->
+        <div class="sermons-list" id="sermons-list">
+          <!-- Populated by script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6 — EVENTS
+    ============================================================ -->
+    <section id="events" class="section section-alt">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Join Us</span>
+          <h2 class="section-title">Upcoming Events</h2>
+          <div class="section-rule"></div>
+        </div>
+
+        <!-- ADMIN: Edit EVENTS array in script.js to manage events -->
+        <div class="events-list" id="events-list">
+          <!-- Populated by script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7 — CONTACT
+    ============================================================ -->
+    <section id="contact" class="section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Contact Us</h2>
+          <div class="section-rule"></div>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h3>We'd Love to Hear From You</h3>
+            <!-- ADMIN: Update contact details below -->
+            <div class="contact-item">
+              <i data-feather="map-pin"></i>
+              <div>
+                <strong>Address</strong>
+                <p>123 Maple Avenue, Springfield, ST 45678</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i data-feather="phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <p>(+260 ) 974828780</p>
+                <p>(+260 ) 977597943</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i data-feather="mail"></i>
+              <div>
+                <strong>Email</strong>
+                <p>lucksonsakala898@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i data-feather="clock"></i>
+              <div>
+                <strong>Service Times</strong>
+                <p>Sunday: 8:00 AM · 10:00 AM · 6:00 PM<br>Wednesday: 7:00 PM</p>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social-links">
+              <!-- ADMIN: Replace # with actual social media URLs -->
+              <a href="www.facebook.com" class="social-btn" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="www.instagram.com" class="social-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="www.youutube.com" class="social-btn" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM10 15V9l5.2 3-5.2 3z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Twitter/X">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="How can we help?" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold btn-full">Send Message <i data-feather="send"></i></button>
+              <p class="form-success hidden" id="form-success">
+                ✅ Thank you! Your message has been received. We'll be in touch soon.
+              </p>
+            </form>
+          </div>
+
+        </div>
+
+        
+        <!-- Google Maps Embed 
+        <div class="map-wrap">
+           ADMIN: Replace the src with your church's Google Maps embed URL 
+           To get embed URL: Google Maps → Share → Embed a map → Copy HTML → paste src here 
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799160891!2d-74.25987368715491!3d40.69767006374042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1703000000000!5m2!1sen!2s"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Church Location Map">
+          </iframe>
+        </div> -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-logo">
+        <span class="logo-cross">✝</span>
+        <span class="logo-text">Grace Fellowship Church</span>
+      </div>
+      <!-- ADMIN: Update footer tagline and copyright year -->
+      <p class="footer-tagline">Where Faith Meets Community</p>
+      <p class="footer-copy">&copy; <span id="footer-year"></span> Grace Fellowship Church. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-top" id="back-top" aria-label="Back to top">
+    <i data-feather="chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
